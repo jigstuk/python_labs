@@ -12,7 +12,7 @@ def normalize(text: str, *, casefold: bool = True, yo2e: bool = True) -> str:
         text=text.lower()
     return ' '.join(text.split())
 ```
-![фото](./image/lab03/img01.png)
+![фото](/image/lab03/img01.png)
 ## Функция tokenize
 ```python
 import re
@@ -20,7 +20,7 @@ import re
 def tokenize(text: str) -> list[str]:
     return re.findall(r"\w+(?:-\w+)*",text)
 ```
-![фото](./image/lab03/img02.png)
+![фото](/image/lab03/img02.png)
 ## Функция count_freq
 ```python
 def count_freq(tokens: list[str]) -> dict[str, int]:
@@ -29,7 +29,7 @@ def count_freq(tokens: list[str]) -> dict[str, int]:
         freq[token]=freq.get(token,0)+1
     return freq
 ```
-![фото](./image/lab03/img03.png)
+![фото](/image/lab03/img03.png)
 ## Функция top_n
 ```python
 def top_n(freq: dict[str, int], n: int = 5) -> list[tuple[str, int]]:
@@ -37,7 +37,7 @@ def top_n(freq: dict[str, int], n: int = 5) -> list[tuple[str, int]]:
         raise ValueError
     return sorted(freq.items(), key=lambda x:(-x[1],x[0]))[:2]
 ```
-![фото](./image/lab03/img04.png)
+![фото](/image/lab03/img04.png)
 ## Задание б
 
 ```python
@@ -61,6 +61,6 @@ print(f'Уникальных слов:{len(uslov)}')
 print(f'Топ-5:')
 
 for word, chislo in top:
-    print(f'{word}:{chislo}'
+    print(f'{word}:{chislo}')
 ```
-![фото](./image/lab03/img05.png)
+![фото](/image/lab03/img05.png)
