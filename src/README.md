@@ -58,7 +58,7 @@ top=top_n(uslov,n=5)
 
 print(f'Всего слов:{len(count)}')
 print(f'Уникальных слов:{len(uslov)}')
-print(f'Топ-5:')
+print('Топ-5:')
 
 for word, chislo in top:
     print(f'{word}:{chislo}')
