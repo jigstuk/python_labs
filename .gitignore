@@ -1,0 +1,5 @@
+__pyache__/
+*.py[cod]
+.venv/
+venv/
+Thumbs.db

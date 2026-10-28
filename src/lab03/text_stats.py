@@ -1,7 +1,7 @@
 import sys
-from pathlib import Path
-m = Path(__file__).resolve().parent.parent.parent
-sys.path.append(str(m))
+# from pathlib import Path
+# m = Path(__file__).resolve().parent.parent.parent
+# sys.path.append(str(m))
 
 from lib.lib import normalize,tokenize,count_freq,top_n
 

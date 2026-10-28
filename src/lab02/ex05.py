@@ -10,4 +10,4 @@ def row_sums(mat: list[list[float | int]]) -> list[float]:
 print("1:",row_sums([[1, 2, 3], [4, 5, 6]]))
 print("2:",row_sums([[-1, 1], [10, -10]]))
 print("3:",row_sums([[0, 0], [0, 0]]))
-print("4:",row_sums([[1, 2], [3]]))
+print("4:",row_sums([[1, 3], [3]]))
