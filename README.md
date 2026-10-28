@@ -75,6 +75,8 @@ def write_csv(rows: list[tuple | list], path: str | Path, header: tuple[str, ...
         writer.writerows(rows)
 ```
 тест-кейс
+
+![фото](/image/lab04/image.png)
 ![фото](/image/lab04/2.png)
 
 # Задание B
@@ -177,8 +179,13 @@ if __name__ == "__main__":
 # python -m src.lab04.text_report --in data/in.txt --out data/out.csv
 ```
 тест а 
+
 ![фото](/image/lab04/а.png)
+
 тест б
+
 ![фото](/image/lab04/б.png)
+
 тест с
+
 ![фото](/image/lab04/с.png)
