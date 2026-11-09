@@ -21,7 +21,7 @@ def json_to_csv(json_path: str, csv_path: str) -> None:
     if not json_path.is_file():
         raise FileNotFoundError("Файл не найден")
 
-    with json_path.open(newline="", encoding="utf-8") as f:
+    with json_path.open(encoding="utf-8") as f:
         try:
             data = json.load(f)
         except json.JSONDecodeError:
@@ -48,9 +48,11 @@ def json_to_csv(json_path: str, csv_path: str) -> None:
         writer.writerows(data)
 ```
 Было
+ 
  ![фото](/image/lab05/джисон.png)
 
  Стало
+
 ![фото](/image/lab05/ксв.png)
 
 ## Функция csv_to_json
@@ -92,9 +94,11 @@ def csv_to_json(csv_path: str, json_path: str) -> None:
 
 ```
 Было
+
 ![фото](/image/lab05/ксв.png)
 
 Стало
+
 ![фото](/image/lab05/джисон.png)
 
 ## Задание В
@@ -143,8 +147,10 @@ def csv_to_xlsx(csv_path: str, xlsx_path: str) -> None:
     wb.save(xlsx_path)
 ```
 Было
+
 ![фото](/image/lab05/ксв.png)
 
 Стало
+
 ![фото](/image/lab05/ексель.png)
 

@@ -20,7 +20,7 @@ def json_to_csv(json_path: str, csv_path: str) -> None:
     if not json_path.is_file():
         raise FileNotFoundError("Файл не найден")
 
-    with json_path.open(newline="", encoding="utf-8") as f:
+    with json_path.open(encoding="utf-8") as f:
         try:
             data = json.load(f)
         except json.JSONDecodeError:
