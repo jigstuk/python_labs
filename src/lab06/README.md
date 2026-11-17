@@ -7,6 +7,8 @@
 
 Утилиты
 stats --> stats --input <путь> [--top N] (считает слова, выводит Топ-N)
+
+
 cat --> cat --input <путь> [-n](выводит файл построчно, -n нумерует строки)
 
 ``` python 
@@ -45,7 +47,11 @@ def cat(path: str, numbered: bool) -> None:
 
 Утилиты 
 json2csv --> --in, --out (JSON -> CSV)
+
+
 csv2json --> --in, --out (CSV -> JSON)
+
+
 csv2xlsx -->--in, --out (CSV -> XLSX)
 
 ![фото](/image/lab06/кли.png)
