@@ -6,6 +6,8 @@
 ## Задание А
 
 Утилиты
+
+
 stats --> stats --input <путь> [--top N] (считает слова, выводит Топ-N)
 
 
@@ -46,6 +48,8 @@ def cat(path: str, numbered: bool) -> None:
 ## Задание В
 
 Утилиты 
+
+
 json2csv --> --in, --out (JSON -> CSV)
 
 
