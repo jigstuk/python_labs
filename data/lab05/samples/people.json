@@ -1,7 +1,7 @@
 [
   {
     "name": "Alice",
-    "age": 22,
+    "age": null,
     "city": "SPB"
   },
   {
